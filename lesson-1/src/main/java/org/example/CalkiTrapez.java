@@ -36,7 +36,7 @@ public class CalkiTrapez {
             double h = (b - a) / n;
             System.out.println("Wartość kroku h = " + h);
 
-            double wynik = calka(a, b, n);
+            double wynik = funkcja(a, b, n);
             System.out.println("Przybliżona wartość całki: " + wynik);
 
             System.out.print("Czy chcesz sprawdzić wynik dla innego n? Podaj n (lub wpisz 0, aby zakończyć): ");
@@ -55,7 +55,7 @@ public class CalkiTrapez {
         }
     }
 
-    public static double calka(double a, double b, int n) {
+    public static double funkcja(double a, double b, int n) {
         double h = (b - a) / n;
         double suma = 0.0;
 
